@@ -8,85 +8,39 @@ class IslamicTasbihApp {
         this.groupKhatmaTarget = 30; // 30 parts for complete Quran
         
         // Surah texts
-        this.surahTexts = {
-            ikhlas: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ هُوَ اللَّهُ أَحَدٌ
-اللَّهُ الصَّمَدُ
-لَمْ يَلِدْ وَلَمْ يُولَدْ
-وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ`,
-            
-            falaq: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ
-مِن شَرِّ مَا خَلَقَ
-وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ
-وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ
-وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ`,
-            
-            nas: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ أَعُوذُ بِرَبِّ النَّاسِ
-مَلِكِ النَّاسِ
-إِلَٰهِ النَّاسِ
-مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ
-الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ
-مِنَ الْجِنَّةِ وَالنَّاسِ`,
-            
-            kafirun: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ يَا أَيُّهَا الْكَافِرُونَ
-لَا أَعْبُدُ مَا تَعْبُدُونَ
-وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ
-وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ
-وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ
-لَكُمْ دِينُكُمْ وَلِيَ دِينِ`,
-            
-            nasr: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ
-وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا
-فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا`,
-            
-            yaseen: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-يس
-وَالْقُرْآنِ الْحَكِيمِ
-إِنَّكَ لَمِنَ الْمُرْسَلِينَ
-عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ
-تَنْزِيلَ الْعَزِيزِ الرَّحِيمِ
-لِتُنذِرَ قَوْمًا مَا أُنذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ
-لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ
-إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُم مُّقْمَحُونَ
-وَجَعَلْنَا مِن بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَاهُمْ فَهُمْ لَا يُبْصِرُونَ
-وَسَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ
-إِنَّمَا تُنذِرُ مَنْ اتَّبَعَ الذِّكْرَ وَخَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍ وَأَجْرٍ كَرِيمٍ
-إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ ۚ وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ فِي إِمَامٍ مُّبِينٍ
-وَاضْرِبْ لَهُم مَّثَلًا أَصْحَابَ الْقَرْيَةِ إِذْ جَاءَهَا الْمُرْسَلُونَ
-إِذْ أَرْسَلْنَا إِلَيْهِمُ اثْنَيْنِ فَكَذَّبُوهُمَا فَعَزَّزْنَا بِثَالِثٍ فَقَالُوا إِنَّا إِلَيْكُم مُّرْسَلُونَ
-قَالُوا مَا أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا وَمَا أَنزَلَ الرَّحْمَٰنُ مِن شَيْءٍ إِنْ أَنتُمْ إِلَّا تَكْذِبُونَ
-قَالُوا رَبُّنَا يَعْلَمُ إِنَّا إِلَيْكُمْ لَمُرْسَلُونَ
-وَمَا عَلَيْنَا إِلَّا الْبَلَاغُ الْمُبِينُ
-... (سورة يس كاملة - 83 آية)
-وَضَرَبَ لَنَا مَثَلًا وَنَسِيَ خَلْقَهُ ۖ قَالَ مَن يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ
-قُلْ يُحْيِيهَا الَّذِي أَنشَأَهَا أَوَّلَ مَرَّةٍ ۖ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ
-الَّذِي جَعَلَ لَكُم مِّنَ الشَّجَرِ الْأَخْضَرِ نَارًا فَإِذَا أَنتُم مِّنْهُ تُوقِدُونَ
-أَوَلَيْسَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِقَادِرٍ عَلَىٰ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ الْخَلَّاقُ الْعَلِيمُ
-إِنَّمَا أَمْرُهُ إِذَا أَرَادَ شَيْئًا أَن يَقُولَ لَهُ كُن فَيَكُونُ
-فَسُبْحَانَ الَّذِي بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَإِلَيْهِ تُرْجَعُونَ`,
-            
-            fatiha: `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
-الرَّحْمَٰنِ الرَّحِيمِ
-مَالِكِ يَوْمِ الدِّينِ
-إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ
-اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ
-صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ`
-        };
-        
+        this.surahTexts = {}; // Will be loaded dynamically
+        this.surahAudioPlayers = {}; // To manage audio for each surah
+        this.currentAudio = null;
+        this.currentAudioSurahId = null;
+
         this.init();
     }
-    
-    init() {
+
+    async init() {
+        await this.loadSurahTexts();
         this.setupEventListeners();
         this.loadSavedData();
         this.startBackgroundRotation();
         this.updateStats();
         this.checkGroupKhatma();
+        this.populateFeaturedSurahs(); // Call this to populate initial surah texts
+    }
+
+    async loadSurahTexts() {
+        const surahsToLoad = ['fatiha', 'yaseen', 'ikhlas', 'falaq', 'nas', 'kafirun', 'nasr'];
+        for (const surahId of surahsToLoad) {
+            try {
+                const response = await fetch(`assets/quran_texts/${surahId}.txt`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${surahId}.txt: ${response.statusText}`);
+                }
+                const text = await response.text();
+                this.surahTexts[surahId] = text;
+            } catch (error) {
+                console.error(`Error loading surah ${surahId}:`, error);
+                this.surahTexts[surahId] = `Failed to load surah ${surahId}. Please check the file.`;
+            }
+        }
     }
     
     setupEventListeners() {
@@ -112,17 +66,37 @@ class IslamicTasbihApp {
         });
         
         // Quran reading buttons
-        document.querySelectorAll('.read-complete-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                this.completeSurah(e.target.dataset.surah || 'selected');
+        document.querySelectorAll(".read-complete-btn").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                this.completeSurah(e.target.dataset.surah || "selected");
             });
         });
-        
+
+        // Add event listener for play audio button
+        document.querySelectorAll(".play-surah-audio-btn").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const surahId = e.target.dataset.surah;
+                this.toggleSurahAudio(surahId);
+            });
+        });
+
         // Surah selector
-        document.getElementById('readSurah').addEventListener('click', () => {
+        document.getElementById("readSurah").addEventListener("click", () => {
             this.showSelectedSurah();
         });
-        
+
+        // Event listener for "continue reading" in Yaseen
+        document.querySelectorAll(".continue-reading").forEach(span => {
+            span.addEventListener("click", (e) => {
+                const surahId = e.target.dataset.surah;
+                if (surahId === "yaseen") {
+                    const yaseenTextEl = e.target.closest(".surah-card").querySelector(".surah-text");
+                    yaseenTextEl.innerHTML = this.surahTexts.yaseen.replace(/\n/g, "  
+");
+                }
+            });
+        });
+
         // Audio controls
         document.getElementById('audioToggle').addEventListener('click', () => {
             this.toggleAudio();
@@ -239,26 +213,91 @@ class IslamicTasbihApp {
         this.updateStats();
         this.checkGroupKhatma();
     }
-    
-    showSelectedSurah() {
-        const select = document.getElementById('surahSelect');
+
+    async showSelectedSurah() {
+        const select = document.getElementById("surahSelect");
         const selectedValue = select.value;
         
         if (!selectedValue) return;
         
-        const surahContainer = document.getElementById('selectedSurah');
-        const titleEl = document.getElementById('selectedSurahTitle');
-        const textEl = document.getElementById('selectedSurahText');
-        const completeBtn = document.getElementById('selectedSurahComplete');
-        
+        const surahContainer = document.getElementById("selectedSurah");
+        const titleEl = document.getElementById("selectedSurahTitle");
+        const textEl = document.getElementById("selectedSurahText");
+        const completeBtn = document.getElementById("selectedSurahComplete");
+        const playAudioBtn = document.getElementById("selectedSurahPlayAudio");
+
         titleEl.textContent = select.options[select.selectedIndex].text;
-        textEl.textContent = this.surahTexts[selectedValue];
+        textEl.innerHTML = this.surahTexts[selectedValue].replace(/\n/g, "  
+");
         completeBtn.dataset.surah = selectedValue;
+        playAudioBtn.dataset.surah = selectedValue;
         
-        surahContainer.style.display = 'block';
-        surahContainer.scrollIntoView({ behavior: 'smooth' });
+        surahContainer.style.display = "block";
+        surahContainer.scrollIntoView({ behavior: "smooth" });
     }
-    
+
+    // New function to populate featured surahs
+    populateFeaturedSurahs() {
+        const fatihaTextEl = document.querySelector(".surah-text[data-surah=\"fatiha\"]");
+        if (fatihaTextEl) {
+            fatihaTextEl.innerHTML = this.surahTexts.fatiha.replace(/\n/g, "  
+");
+        }
+        const yaseenTextEl = document.querySelector(".surah-text[data-surah=\"yaseen\"]");
+        if (yaseenTextEl) {
+            // Display only a portion of Yaseen initially, with a 'continue reading' option
+            const yaseenLines = this.surahTexts.yaseen.split("\n");
+            const displayLines = yaseenLines.slice(0, 10); // Display first 10 lines
+            yaseenTextEl.innerHTML = displayLines.join("  
+") +
+                                     `  
+<span class="continue-reading" data-surah="yaseen">... (اضغط لقراءة السورة كاملة)</span>`;
+        }
+    }
+
+    toggleSurahAudio(surahId) {
+        const audioUrl = `https://server8.mp3quran.net/afs/${this.getSurahAudioNumber(surahId )}.mp3`;
+
+        if (this.currentAudio && this.currentAudioSurahId === surahId) {
+            // Pause if the same surah is playing
+            this.currentAudio.pause();
+            this.currentAudio = null;
+            this.currentAudioSurahId = null;
+            document.querySelector(`[data-surah="${surahId}"].play-surah-audio-btn`).textContent = 'تشغيل الصوت';
+        } else {
+            // Stop any currently playing audio
+            if (this.currentAudio) {
+                this.currentAudio.pause();
+                document.querySelector(`[data-surah="${this.currentAudioSurahId}"].play-surah-audio-btn`).textContent = 'تشغيل الصوت';
+            }
+
+            // Play new surah
+            this.currentAudio = new Audio(audioUrl);
+            this.currentAudio.volume = 0.5; // Adjust volume as needed
+            this.currentAudio.play().then(() => {
+                this.currentAudioSurahId = surahId;
+                document.querySelector(`[data-surah="${surahId}"].play-surah-audio-btn`).textContent = 'إيقاف الصوت';
+            }).catch(error => {
+                console.error(`Error playing audio for surah ${surahId}:`, error);
+                this.showAudioError("لا يمكن تشغيل صوت السورة. تأكد من الاتصال بالإنترنت.");
+            });
+        }
+    }
+
+    getSurahAudioNumber(surahId) {
+        // This is a simplified mapping. A more robust solution would involve a comprehensive surah data object.
+        const surahNumbers = {
+            fatiha: "001",
+            yaseen: "036",
+            ikhlas: "112",
+            falaq: "113",
+            nas: "114",
+            kafirun: "109",
+            nasr: "110"
+        };
+        return surahNumbers[surahId] || "001"; // Default to Fatiha if not found
+    }
+
     showKhatmaComplete() {
         const khatmaCompleteEl = document.getElementById('khatmaComplete');
         khatmaCompleteEl.style.display = 'block';
@@ -357,15 +396,15 @@ class IslamicTasbihApp {
                 text.textContent = 'إيقاف الخلفية الصوتية';
                 this.audioPlaying = true;
             }).catch(error => {
-                console.log('Audio playback failed:', error);
-                this.showAudioError();
+                console.log("Audio playback failed:", error);
+                this.showAudioError("لا يمكن تشغيل الصوت. تأكد من الاتصال بالإنترنت.");
             });
         }
     }
-    
-    showAudioError() {
-        const errorMsg = document.createElement('div');
-        errorMsg.textContent = 'لا يمكن تشغيل الصوت. تأكد من الاتصال بالإنترنت.';
+
+    showAudioError(message) {
+        const errorMsg = document.createElement("div");
+        errorMsg.textContent = message;
         errorMsg.style.cssText = `
             position: fixed;
             top: 20px;
@@ -387,12 +426,16 @@ class IslamicTasbihApp {
     }
     
     startBackgroundRotation() {
-        const backgrounds = ['', 'bg-2', 'bg-3'];
-        
+        const backgrounds = ["mosque1.jpg", "mosque2.jpg", "mosque3.png"];
+        const headerOverlay = document.querySelector(".header-overlay");
+
         this.backgroundInterval = setInterval(() => {
-            document.body.className = backgrounds[this.backgroundIndex];
             this.backgroundIndex = (this.backgroundIndex + 1) % backgrounds.length;
+            headerOverlay.style.backgroundImage = `url("assets/${backgrounds[this.backgroundIndex]}")`;
         }, 30000); // Change every 30 seconds
+
+        // Set initial background
+        headerOverlay.style.backgroundImage = `url("assets/${backgrounds[this.backgroundIndex]}")`;
     }
     
     loadSavedData() {
@@ -436,13 +479,12 @@ class IslamicTasbihApp {
         // Update footer stats
         document.getElementById('totalDhikr').textContent = totalDhikr;
         document.getElementById('totalDuas').textContent = totalDuas;
-        document.getElementById('totalSurahs').textContent = 
-            localStorage.getItem('surah_count') || '0';
+        document.getElementById('totalSurahs').textContent = localStorage.getItem('surah_count') || '0';
     }
 }
 
 // Add CSS animations
-const style = document.createElement('style');
+const style = document.createElement("style");
 style.textContent = `
     @keyframes celebrationPulse {
         0%, 100% { transform: translate(-50%, -50%) scale(1); }
@@ -457,20 +499,19 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Initialize app when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     new IslamicTasbihApp();
 });
 
 // Service Worker for offline functionality
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js")
             .then(registration => {
-                console.log('SW registered: ', registration);
+                console.log("SW registered: ", registration);
             })
             .catch(registrationError => {
-                console.log('SW registration failed: ', registrationError);
+                console.log("SW registration failed: ", registrationError);
             });
     });
 }
-
