@@ -1,0 +1,26 @@
+{
+    "name": "مسبحة إلكترونية - صدقة جارية",
+    "short_name": "مسبحة إلكترونية",
+    "description": "مسبحة إلكترونية للأذكار والقرآن الكريم - صدقة جارية على روح المرحوم محمد بدرالدين عبدالحميد",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5f1e8",
+    "theme_color": "#d4af37",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/quran1.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "assets/quran1.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ],
+    "categories": ["lifestyle", "education", "religion"],
+    "lang": "ar",
+    "dir": "rtl"
+}
+

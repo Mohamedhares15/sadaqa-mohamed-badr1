@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة جارية - مسبحة إلكترونية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with dedication message -->
+    <header class="header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <div class="quran-icon">
+                <img src="assets/quran1.jpg" alt="القرآن الكريم" class="header-quran-img">
+            </div>
+            <div class="dedication-text">
+                <h1 class="dedication-title">صدقة جارية على روح المرحوم</h1>
+                <h2 class="deceased-name">محمد بدرالدين عبدالحميد</h2>
+                <p class="prayer-text">اللهم اسكنه فسيح جناتك</p>
+            </div>
+        </div>
+        
+        <!-- Audio controls -->
+        <div class="audio-controls">
+            <button id="audioToggle" class="audio-btn">
+                <span class="audio-icon">🔊</span>
+                <span class="audio-text">تشغيل الخلفية الصوتية</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <button class="nav-btn active" data-page="istighfar">الاستغفار والتسبيح</button>
+        <button class="nav-btn" data-page="duas">الأدعية الطويلة</button>
+        <button class="nav-btn" data-page="quran">القرآن الكريم</button>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <!-- Page 1: Istighfar and Tasbih -->
+        <section id="istighfar" class="page active">
+            <h2 class="page-title">الاستغفار والتسبيح والأذكار القصيرة</h2>
+            <p class="page-subtitle">اضغط على الذكر لزيادة العداد</p>
+            
+            <div class="dhikr-grid">
+                <div class="dhikr-card" data-id="istighfar">
+                    <button class="dhikr-btn">أستغفر الله العظيم</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/100</span>
+                    </div>
+                </div>
+                
+                <div class="dhikr-card" data-id="subhan">
+                    <button class="dhikr-btn">سبحان الله</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/33</span>
+                    </div>
+                </div>
+                
+                <div class="dhikr-card" data-id="hamdulillah">
+                    <button class="dhikr-btn">الحمد لله</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/33</span>
+                    </div>
+                </div>
+                
+                <div class="dhikr-card" data-id="allahu-akbar">
+                    <button class="dhikr-btn">الله أكبر</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/33</span>
+                    </div>
+                </div>
+                
+                <div class="dhikr-card" data-id="la-hawla">
+                    <button class="dhikr-btn">لا حول ولا قوة إلا بالله</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/10</span>
+                    </div>
+                </div>
+                
+                <div class="dhikr-card" data-id="salawat">
+                    <button class="dhikr-btn">اللهم صل على محمد</button>
+                    <div class="counter">
+                        <span class="count">0</span>
+                        <span class="target">/10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2: Long Duas -->
+        <section id="duas" class="page">
+            <h2 class="page-title">الأدعية الطويلة وأذكار الصباح والمساء</h2>
+            
+            <div class="duas-container">
+                <div class="dua-section">
+                    <h3 class="dua-title">دعاء للميت</h3>
+                    <div class="dua-text">
+                        اللهم اغفر له وارحمه وعافه واعف عنه وأكرم نزله ووسع مدخله واغسله بالماء والثلج والبرد ونقه من الخطايا كما نقيت الثوب الأبيض من الدنس وأبدله داراً خيراً من داره وأهلاً خيراً من أهله وزوجاً خيراً من زوجه وأدخله الجنة وأعذه من عذاب القبر ومن عذاب النار
+                    </div>
+                    <div class="dua-counter">
+                        <button class="dua-count-btn" data-dua="dua-mayyit">تم الدعاء</button>
+                        <span class="dua-count">0</span>
+                    </div>
+                </div>
+                
+                <div class="dua-section">
+                    <h3 class="dua-title">أذكار الصباح</h3>
+                    <div class="dua-text">
+                        أصبحنا وأصبح الملك لله والحمد لله لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير رب أسألك خير ما في هذا اليوم وخير ما بعده وأعوذ بك من شر ما في هذا اليوم وشر ما بعده
+                    </div>
+                    <div class="dua-counter">
+                        <button class="dua-count-btn" data-dua="morning">تم الدعاء</button>
+                        <span class="dua-count">0</span>
+                    </div>
+                </div>
+                
+                <div class="dua-section">
+                    <h3 class="dua-title">أذكار المساء</h3>
+                    <div class="dua-text">
+                        أمسينا وأمسى الملك لله والحمد لله لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير رب أسألك خير ما في هذه الليلة وخير ما بعدها وأعوذ بك من شر ما في هذه الليلة وشر ما بعدها
+                    </div>
+                    <div class="dua-counter">
+                        <button class="dua-count-btn" data-dua="evening">تم الدعاء</button>
+                        <span class="dua-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3: Quran -->
+        <section id="quran" class="page">
+            <h2 class="page-title">القرآن الكريم</h2>
+            
+            <!-- Always visible surahs -->
+            <div class="featured-surahs">
+                <div class="surah-card">
+                    <h3 class="surah-title">سورة الفاتحة</h3>
+                    <div class="surah-text quran-text">
+                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                        الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ<br>
+                        الرَّحْمَٰنِ الرَّحِيمِ<br>
+                        مَالِكِ يَوْمِ الدِّينِ<br>
+                        إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ<br>
+                        اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ<br>
+                        صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+                    </div>
+                    <button class="read-complete-btn" data-surah="fatiha">تمت القراءة</button>
+                </div>
+                
+                <div class="surah-card">
+                    <h3 class="surah-title">سورة يس</h3>
+                    <div class="surah-text quran-text">
+                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                        يس<br>
+                        وَالْقُرْآنِ الْحَكِيمِ<br>
+                        إِنَّكَ لَمِنَ الْمُرْسَلِينَ<br>
+                        عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ<br>
+                        تَنْزِيلَ الْعَزِيزِ الرَّحِيمِ<br>
+                        لِتُنذِرَ قَوْمًا مَا أُنذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ<br>
+                        <span class="continue-reading">... (اضغط لقراءة السورة كاملة)</span>
+                    </div>
+                    <button class="read-complete-btn" data-surah="yaseen">تمت القراءة</button>
+                </div>
+            </div>
+            
+            <!-- Surah selector -->
+            <div class="surah-selector">
+                <h3>اختر سورة أخرى</h3>
+                <select id="surahSelect" class="surah-dropdown">
+                    <option value="">اختر سورة...</option>
+                    <option value="ikhlas">سورة الإخلاص</option>
+                    <option value="falaq">سورة الفلق</option>
+                    <option value="nas">سورة الناس</option>
+                    <option value="kafirun">سورة الكافرون</option>
+                    <option value="nasr">سورة النصر</option>
+                </select>
+                <button id="readSurah" class="read-btn">اقرأ السورة</button>
+            </div>
+            
+            <!-- Selected surah display -->
+            <div id="selectedSurah" class="selected-surah" style="display: none;">
+                <h3 id="selectedSurahTitle" class="surah-title"></h3>
+                <div id="selectedSurahText" class="surah-text quran-text"></div>
+                <button id="selectedSurahComplete" class="read-complete-btn">تمت القراءة</button>
+            </div>
+            
+            <!-- Khatma counter -->
+            <div class="khatma-section">
+                <h3>الختمة الجماعية</h3>
+                <div class="khatma-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">عدد السور المقروءة:</span>
+                        <span id="surahCount" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">الختمات المكتملة:</span>
+                        <span id="khatmaCount" class="stat-value">0</span>
+                    </div>
+                </div>
+                <div id="khatmaComplete" class="khatma-complete" style="display: none;">
+                    🎉 تمت الختمة! بارك الله فيكم
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Statistics footer -->
+    <footer class="stats-footer">
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-number" id="totalDhikr">0</span>
+                <span class="stat-label">إجمالي الأذكار</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="totalDuas">0</span>
+                <span class="stat-label">إجمالي الأدعية</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="totalSurahs">0</span>
+                <span class="stat-label">السور المقروءة</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background audio -->
+    <audio id="backgroundAudio" loop>
+        <source src="https://server8.mp3quran.net/afs/001.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="مسبحة إلكترونية">
+    <link rel="apple-touch-icon" href="assets/quran1.jpg">
+
