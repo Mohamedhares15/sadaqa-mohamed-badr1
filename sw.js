@@ -5,12 +5,12 @@ const urlsToCache = [
     '/index.html',
     '/styles.css',
     '/script.js',
-    '/assets/mosque1.jpg',
-    '/assets/mosque2.jpg',
-    '/assets/mosque3.png',
-    '/assets/quran1.jpg',
-    '/assets/quran2.jpg',
-    '/assets/quran3.jpg',
+    '/mosque1.jpg',
+    '/mosque2.jpg',
+    '/mosque3.png',
+    '/quran1.jpg',
+    '/quran2.jpg',
+    '/quran3.jpg',
     'https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Cairo:wght@300;400;600;700;800&display=swap'
 ];
 
